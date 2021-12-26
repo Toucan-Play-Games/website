@@ -151,6 +151,19 @@ header {
     min-height: 100vh;
 }
 
+.contact a {
+    transition: all 0.3s ease 0s;
+    background-color: rgb(26, 26, 26, 0);
+    padding: 4px 15px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.contact a:hover {
+    background-color: rgb(26, 26, 26, .3);
+}
+
 .games {
     background-color: #8BC668 !important;
     min-height: 100vh;
