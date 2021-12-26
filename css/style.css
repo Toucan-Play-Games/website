@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap');
+
+html {
+    overflow: scroll;
+    box-sizing:border-box
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*, * :before, * :after {
+    box-sizing: inherit
+}
+
+body {
+    background-color: rgb(185, 246, 149);
+}
+
+a {
+    font-family: "Kadwa", serif;
+    text-decoration: none;
+    color: rgb(44, 44, 44);
+}
+
+.header-display-container {
+    position: relative;
+}
+
+.header-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 980px;
+}
+
+.image {
+    max-width: 100%;
+    height:auto;
+}
+
+.nav-bar {
+    width: 100%;
+    overflow:hidden
+}
+
+.center .nav-bar {
+    display: inline-block;
+    width: auto
+}
+
+.nav-bar .nav-bar-item {
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0;
+}
+
+.nav-bar-item-text {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.nav-bar .nav-dropdown-hover, .nav-bar .nav-dropdown-click {
+    position: static;
+    float: left
+}
+
+.nav-bar .nav-button {
+    white-space: normal
+}
+
+.nav-display-bottommiddle {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%)
+}
+
+#header {
+    width: 100vw;
+    top: 0;
+    left: 0;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-bar a {
+    transition: all 0.3s ease 0s;
+    background-color: rgb(26, 26, 26, 0);
+    padding: 4px 15px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.nav-bar a:hover {
+    background-color: rgb(26, 26, 26, .3);
+}
+
+.vignette {
+    position:relative;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 200px rgba(0, 0, 0, 0.2) inset;
+}
+
+#container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.hero {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1000px) {
+    .hero-container {
+        max-width: 936px;
+    }
+}
+.hero-container {
+    flex-grow: 1;
+    margin: 0 auto;
+    position:relative;
+
+    width: auto;
+}
+
+.hero-body {
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 3rem 1.5rem;
+}
+
+.contact {
+    background-color: #B9F695 !important;
+    min-height: 100vh;
+}
+
+.games {
+    background-color: #8BC668 !important;
+    min-height: 100vh;
+}
+
+#content {
+    flex-grow: 1;
+    flex: 1;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Kadwa", serif;
+    font-weight: 400;
+    font-size: 32px;
+    text-decoration: none;
+    color: rgb(44, 44, 44);
+    text-align: center;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
