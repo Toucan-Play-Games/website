@@ -1,0 +1,20 @@
+on:
+  push:
+    branches:
+      - main
+
+name: Deploy website on push
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Push files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: ftp://toucanplaygames.com
+        username: u695239690
+        password: ${{ secrets.ftp_password }}
