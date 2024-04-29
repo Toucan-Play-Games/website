@@ -15,6 +15,6 @@ jobs:
     - name: Push files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        server: ftp://toucanplaygames.com
+        server: ftp.toucanplaygames.com
         username: u695239690
         password: ${{ secrets.ftp_password }}
